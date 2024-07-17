@@ -1,0 +1,5 @@
+torch == 2.3.0+cu121
+torchvision == 0.18.0+cu121
+matplotlib == 3.7.5
+opencv-python == 4.10.0.82
+tensorboard == 2.13.0
