@@ -1,18 +1,20 @@
 # Introduce
 This repository contains the source code for our paper:
 
-[面向复杂燃烧状态识别的多编码器特征融合模型]([https://www.mdpi.com/1996-1073/17/20/5143](https://kns.cnki.net/kcms2/article/abstract?v=Jz5IuRg0t03-cDqcifcRq6-nls248fUhuHJ5p_Zi3QDebkxYyU2LI3hCN6pl_RRUlbMtUQWF7UYwf0yGYJGd794uXIQmmpYE577SeNu1qXKomemEu2KK28oANk5mzhlefaD_TVs9TPtNA1TNGDAnI4nbbvmuGsNcPCD6dLPTHrxScNaUtK40mw==&uniplatform=NZKPT))
+[面向复杂燃烧状态识别的多编码器特征融合模型](https://kns.cnki.net/kcms2/article/abstract?v=Jz5IuRg0t03-cDqcifcRq6-nls248fUhuHJ5p_Zi3QDebkxYyU2LI3hCN6pl_RRUlbMtUQWF7UYwf0yGYJGd794uXIQmmpYE577SeNu1qXKomemEu2KK28oANk5mzhlefaD_TVs9TPtNA1TNGDAnI4nbbvmuGsNcPCD6dLPTHrxScNaUtK40mw==&uniplatform=NZKPT)
 
-## Functions
-* It introduces a self-attention mechanism in the skip connections to enhance the extraction of key information from deep features;
-* It replaces traditional convolutions with depthwise separable convolutions to reduce the model’s computational complexity and improve inference speed;
-* It substitutes the bottleneck layer with a Transformer encoder to leverage the global modeling capabilities of Transformers, allowing the model to better understand contextual information within the image.
+## Summary
+* A multi-encoder feature fusion model was proposed for complex combustion state recognition, where multiple parallel encoders extract complementary flame-image features and improve classification performance.
+* A SepResBlock based on depthwise separable convolution and residual connections was introduced to replace standard convolutions, reducing parameter count by 61% while also lowering computational complexity.
+* The method achieved 99.4% classification accuracy, and experiments showed that it outperformed conventional methods in both recognition accuracy and efficiency, with good potential for practical deployment.
 
 ## Model Architecture
-![](./images/1.png)
+![](./assets/ModelArch.png)
 
 ## Results
-![](./images/2.png)
+![](./assets/Parms.png)
+![](./assets/AblationStudy.png)
+![](./assets/DataAug.png)
 ## Env set
 * cuda               11.8
 * python             3.8.0
@@ -20,7 +22,7 @@ This repository contains the source code for our paper:
 * Detail please reference requierment.txt
 
 ## About author
-* warren@伟
+* [warren@伟](https://warren-wzw.github.io/HomePage/)
 * Blog：[CSDN](https://blog.csdn.net/warren103098?type=blog)
 
 ## If this work is helpful to you, please cite it as：
